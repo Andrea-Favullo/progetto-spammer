@@ -1,10 +1,9 @@
 <form>
   <label for="inFrase">Frase da spammare</label>
-  <input name="inFrase">
-
+  <input type="text" name="inFrase" #newFrase>
+  <br>
   <label for="inNumero">Numero di volte</label>
-  <input name="inNumero">
+  <input type="number" name="inNumero" #newNumero>
 
-<button (click)="onclick()"></button>
-
+  <button (click)="onclick(newFrase, newNumero)">Avvio</button>
 </form>

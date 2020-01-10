@@ -20,6 +20,6 @@ export class AppComponent {
     for(let i:number=0; i<num; i++){
       this.articles.push(frase);
     }
-
+    return false;
   }
 }
