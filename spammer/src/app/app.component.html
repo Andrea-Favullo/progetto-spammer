@@ -14,7 +14,7 @@
   <button (click)="onclick(newFrase, newNumero)">Avvio</button>
 
   <ul>
-    <li *ngFor="let frase of articles">{{frase}}</li>
+    <li *ngFor="let frase of articles"> <app-frase [frase]="frase"></app-frase> </li>
   </ul>
 
 </form>
