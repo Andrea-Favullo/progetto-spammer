@@ -1,9 +1,20 @@
 <form>
+  <!--campo frase-->
+  <br>
   <label for="inFrase">Frase da spammare</label>
   <input type="text" name="inFrase" #newFrase>
+
+  <!--campo numero-->
   <br>
   <label for="inNumero">Numero di volte</label>
   <input type="number" name="inNumero" #newNumero>
 
+  <!--bottone che fa spammare la frase per il numero di volte-->
+  <br>
   <button (click)="onclick(newFrase, newNumero)">Avvio</button>
+
+  <ul>
+    <li *ngFor="let frase of articles">{{frase}}</li>
+  </ul>
+
 </form>
